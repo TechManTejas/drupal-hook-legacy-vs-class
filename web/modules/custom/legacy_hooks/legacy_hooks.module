@@ -11,6 +11,16 @@ function legacy_hooks_theme() {
   ];
 }
 
+/**
+ * Implements hook_page_attachments().
+ */
+function legacy_hooks_page_attachments(array &$attachments) {
+    // Attach a custom library to the /legacy page.
+    if (\Drupal::routeMatch()->getRouteName() === 'legacy_hooks.page') {
+      $attachments['#attached']['library'][] = 'legacy_hooks/custom_styles';
+    }
+  }
+
 
 /**
  * Implements hook_help().
