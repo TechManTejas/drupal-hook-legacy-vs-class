@@ -1,3 +1,7 @@
 services:
   class_hooks.theme_hook:
     class: Drupal\class_hooks\Hook\ThemeHook
+
+  class_hooks.help_hook:
+    class: Drupal\class_hooks\Hook\HelpHook
+    arguments: ['@module_handler']

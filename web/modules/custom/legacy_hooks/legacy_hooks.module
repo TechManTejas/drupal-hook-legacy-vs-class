@@ -12,3 +12,14 @@ function legacy_hooks_theme() {
 }
 
 
+/**
+ * Implements hook_help().
+ */
+function legacy_hooks_help($route_name, $route_parameters) {
+    switch ($route_name) {
+      case 'help.page.legacy_hooks':
+        return '<p>This module demonstrates the legacy way of implementing theme hooks in Drupal.</p>';
+    }
+  }
+  
+
