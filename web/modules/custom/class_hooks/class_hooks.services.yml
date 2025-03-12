@@ -1,0 +1,3 @@
+services:
+  class_hooks.theme_hook:
+    class: Drupal\class_hooks\Hook\ThemeHook

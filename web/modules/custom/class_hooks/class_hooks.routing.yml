@@ -1,0 +1,7 @@
+class_hooks.page:
+  path: '/class'
+  defaults:
+    _controller: '\Drupal\class_hooks\Controller\ClassHooksController::build'
+    _title: 'Class Hooks'
+  requirements:
+    _permission: 'access content'

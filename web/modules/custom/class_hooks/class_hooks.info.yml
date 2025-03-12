@@ -1,0 +1,5 @@
+name: 'Class Hooks'
+type: module
+description: 'Demonstrates hook implementation using class-based approach in Drupal 11.'
+core_version_requirement: ^11
+package: Custom

@@ -1,0 +1,14 @@
+<?php
+
+/**
+ * Implements hook_theme().
+ */
+function legacy_hooks_theme() {
+  return [
+    'legacy_template' => [
+      'variables' => ['message' => NULL],
+    ],
+  ];
+}
+
+

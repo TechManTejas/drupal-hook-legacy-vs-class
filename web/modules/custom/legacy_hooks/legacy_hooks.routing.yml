@@ -1,0 +1,7 @@
+legacy_hooks.page:
+  path: '/legacy'
+  defaults:
+    _controller: '\Drupal\legacy_hooks\Controller\LegacyHooksController::build'
+    _title: 'Legacy Hooks'
+  requirements:
+    _permission: 'access content'
